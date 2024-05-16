@@ -1,0 +1,297 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOGq+q4G4Htb4jQuP8gXKxc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Meryemsahin0/Python/blob/main/Hi-kod\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "CSox3KCjRfrd"
+      },
+      "outputs": [],
+      "source": [
+        "\"\"\"Ödev-1: Değişkenlere atanmış değerlerin veri tipleri arasında dönüşüm yapılır.\n",
+        "\n",
+        "\n",
+        "Ödev-2: İsimlerden oluşan üç değişkene yaş değerleri atanır. Belirlenen üç değişken birbiriyle karşılaştırma operatörleri ile karşılaştırılır. Bu karşılaştırmalara mantıksal operatörler de eklenir.\n",
+        "\n",
+        "\n",
+        "Ödev-3: Kullanıcıdan iki değer girmesini istenir. Girilen değerlerin toplama, çıkarma, çarpma, bölme sonuçlarını yazdırılır.\n",
+        "\n",
+        "\n",
+        "Ödev-4: Kullanıcıdan isim, yaş, şehir ve meslek bilgilerini istenir ve cevaplarını yazdırılır.\n",
+        "\n",
+        "\n",
+        "Ödev-5: \"Hi-Kod Veri Bilimi Atölyesi\" ifadesini bir değişkene tanımlanır.\n",
+        "\n",
+        "\n",
+        " İfadedeki her bir kelimeyi (\"Hi-Kod\", \"Veri\", \"Bilimi\", \"Atölyesi\") değişken içinden seçilir.\n",
+        " İfadeyi hepsini büyük harf olacak hale çevrilir. (\"HI-KOD VERİ BİLİMİ ATÖLYESİ\")\n",
+        " İfadeyi hepsini büyük harf olacak hale çevrilir.(\"hi-kod veri bilimi atölyesi\")\n",
+        "\n",
+        "\"0123456789\" ifadesindeki yalnızca çift sayıları ve yalnızca tek sayıları seçilir. (\"02468\", \"13579\")\"\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ödev1:Değişkenlere atanmış değerlerin veri tipleri arasında dönüşüm yapılır.\n",
+        "Hi_Kod=9\n",
+        "Veri=7.9\n",
+        "Bilimi=\"23\"\n",
+        "Atolyesi=5.0\n",
+        "print(type(Hi_Kod))#tür tespiti 1\n",
+        "print(type(Veri))\n",
+        "print(type(Bilimi))\n",
+        "print(type(Atolyesi))\n",
+        "float(Hi_Kod)\n",
+        "print(type(Hi_Kod))\n",
+        "int(Veri)\n",
+        "print(type(Veri))\n",
+        "int(Bilimi)\n",
+        "print(type(Bilimi))\n",
+        "str(Atolyesi)\n",
+        "print(type(Atolyesi))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EDT7ozThRiPr",
+        "outputId": "a8d005c1-7435-44d5-9cad-c491354526b1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n",
+            "<class 'float'>\n",
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ödev 2  İsimlerden oluşan üç değişkene yaş değerleri atanır. Belirlenen üç değişken birbiriyle karşılaştırma operatörleri ile karşılaştırılır. Bu karşılaştırmalara mantıksal operatörler de eklenir.\n",
+        "meryem=19\n",
+        "rim=3\n",
+        "bilal=63\n",
+        "if meryem < rim:\n",
+        "  print(\"meryem rimden küçüktür.\")\n",
+        "elif meryem > rim & meryem < bilal:\n",
+        "  print(\"meryem ortancadır.\")\n",
+        "else :\n",
+        "  print(\"rim meryemden küçüktür ve meryem ortanca değildir.\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BA1OKQ1GTpOi",
+        "outputId": "f6e8374f-83c0-4174-b3bd-e6ddf6d7987e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "meryem ortancadır.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ödev 3  Kullanıcıdan iki değer girmesini istenir. Girilen değerlerin toplama, çıkarma, çarpma, bölme sonuçlarını yazdırılır.\n",
+        "\n",
+        "a=int(input(\"sayı giriniz.\"))\n",
+        "b=int(input(\"sayı giriniz.\"))\n",
+        "\n",
+        "print(\"toplamları : {}\".format(a+b))\n",
+        "print(f\"farkları : {0}\",a-b)\n",
+        "print(f\"çarpımları : {0}\",a*b)\n",
+        "print(f\"bölümleri : {0}\",a/b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "crK7AEf1VspL",
+        "outputId": "40721e5a-3c9a-4d35-8cfc-58e8533220f9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sayı giriniz.89\n",
+            "sayı giriniz.7\n",
+            "toplamları : 96\n",
+            "farkları : 0 82\n",
+            "çarpımları : 0 623\n",
+            "bölümleri : 0 12.714285714285714\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ödev 4 Kullanıcıdan isim, yaş, şehir ve meslek bilgilerini istenir ve cevaplarını yazdırılır.\n",
+        "isim=input(\"İsminizi giriniz:\")\n",
+        "yaş=int(input(\"Yaşınızı giriniz:\"))\n",
+        "şehir=input(\"Şehir adını giriniz:\")\n",
+        "meslek=input(\"Mesleğiniz nedir:\")\n",
+        "print(\"{0} adlı kişi {1} yaşındadır.{2} ilinde ikamet ediyor ve {3}dur.\".format(isim,yaş,şehir,meslek,))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j0gxjDuTVsrM",
+        "outputId": "ab97c623-8108-479e-cad8-d05a3ec803e1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "İsminizi giriniz:Selin\n",
+            "Yaşınızı giriniz:34\n",
+            "Şehir adını giriniz:izmir\n",
+            "Mesleğiniz nedir:Doktor\n",
+            "Selin adlı kişi 34 yaşındadır.izmir ilinde ikamet ediyor ve Doktordur.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "'''Ödev-5: \"Hi-Kod Veri Bilimi Atölyesi\" ifadesini bir değişkene tanımlanır.\n",
+        "\n",
+        "\n",
+        " İfadedeki her bir kelimeyi (\"Hi-Kod\", \"Veri\", \"Bilimi\", \"Atölyesi\") değişken içinden seçilir.\n",
+        " İfadeyi hepsini büyük harf olacak hale çevrilir. (\"HI-KOD VERİ BİLİMİ ATÖLYESİ\")\n",
+        " İfadeyi hepsini büyük harf olacak hale çevrilir.(\"hi-kod veri bilimi atölyesi\") '''\n",
+        "a=\"Hi-Kod Veri Bilimi Atölyesi\"\n",
+        "b=a.split(\" \")\n",
+        "l=0\n",
+        "for i in b:\n",
+        "  b[l]=i.upper()\n",
+        "  l=l+1\n",
+        "j=\" \".join(b)\n",
+        "print(j)\n",
+        "b=a.split(\" \")\n",
+        "l=0\n",
+        "for k in b:\n",
+        "  b[l]=k.lower()\n",
+        "  l=l+1\n",
+        "t=\" \".join(b)\n",
+        "print(t)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "amfUGe3ParfH",
+        "outputId": "40ed04c3-8df9-47cb-9267-f80ee2fa12d7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HI-KOD VERI BILIMI ATÖLYESI\n",
+            "hi-kod veri bilimi atölyesi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#\"0123456789\" ifadesindeki yalnızca çift sayıları ve yalnızca tek sayıları seçilir. (\"02468\", \"13579\")\"\"\n",
+        "a=\"0,1,2,3,4,5,6,7,8,9\"\n",
+        "a=a.split(\",\")\n",
+        "p=0\n",
+        "for k in a:\n",
+        "  a[p]=int(k)\n",
+        "  p+=1\n",
+        "for k in a:\n",
+        "  if(k%2==0):\n",
+        "    print(k)\n",
+        "\n",
+        "for k in a:\n",
+        "  if(k%2!=0):\n",
+        "    print(k)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RP7E4uJFOJWJ",
+        "outputId": "d7b32a68-20fd-4190-ca46-36e890a29c3d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
